@@ -67,9 +67,6 @@ except
 select name, city from emp_info
 
 --Second most salary 
-select salary from emp  as e1 where 1 =
-								(select count(distinct salary) from  emp as e2 where e2.salary > e1.salary)
-
-
+select salary from emp  as e1 where 1 =	(select count(distinct salary) from  emp as e2 where e2.salary > e1.salary)
 
 
